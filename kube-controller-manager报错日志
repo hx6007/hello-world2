@@ -1,0 +1,394 @@
+-- Logs begin at Tue 2019-05-21 16:59:14 CST. --
+May 23 19:42:55 m7-a2-15-41.18-jiagou.cn kube-controller-manager[78927]: E0523 19:42:55.225656   78927 prometheus.go:189] failed to register unfinished_work_seconds metric certificate: duplicate metrics collector registration attempted
+May 23 19:42:55 m7-a2-15-41.18-jiagou.cn kube-controller-manager[78927]: E0523 19:42:55.225698   78927 prometheus.go:202] failed to register longest_running_processor_microseconds metric certificate: duplicate metrics collector registration attempted
+May 23 19:42:55 m7-a2-15-41.18-jiagou.cn kube-controller-manager[78927]: E0523 19:42:55.225729   78927 prometheus.go:214] failed to register retries metric certificate: duplicate metrics collector registration attempted
+May 23 19:42:55 m7-a2-15-41.18-jiagou.cn kube-controller-manager[78927]: I0523 19:42:55.225842   78927 controllermanager.go:497] Started "csrsigning"
+May 23 19:42:55 m7-a2-15-41.18-jiagou.cn kube-controller-manager[78927]: I0523 19:42:55.225851   78927 controllermanager.go:482] Starting "nodeipam"
+May 23 19:42:55 m7-a2-15-41.18-jiagou.cn kube-controller-manager[78927]: I0523 19:42:55.225880   78927 certificate_controller.go:113] Starting certificate controller
+May 23 19:42:55 m7-a2-15-41.18-jiagou.cn kube-controller-manager[78927]: I0523 19:42:55.225898   78927 controller_utils.go:1027] Waiting for caches to sync for certificate controller
+May 23 19:42:55 m7-a2-15-41.18-jiagou.cn kube-controller-manager[78927]: I0523 19:42:55.374315   78927 node_ipam_controller.go:99] Sending events to api server.
+May 23 19:43:00 m7-a2-15-41.18-jiagou.cn systemd[1]: Stopping Kubernetes Controller Manager...
+May 23 19:43:00 m7-a2-15-41.18-jiagou.cn systemd[1]: Stopped Kubernetes Controller Manager.
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn systemd[1]: Started Kubernetes Controller Manager.
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: Flag --port has been deprecated, see --secure-port instead.
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: Flag --horizontal-pod-autoscaler-use-rest-clients has been deprecated, Heapster is no longer supported as a source for Horizontal Pod Autoscaler metrics.
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.610742   79135 flags.go:33] FLAG: --address="0.0.0.0"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611006   79135 flags.go:33] FLAG: --allocate-node-cidrs="true"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611014   79135 flags.go:33] FLAG: --allow-untagged-cloud="false"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611018   79135 flags.go:33] FLAG: --alsologtostderr="true"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611022   79135 flags.go:33] FLAG: --attach-detach-reconcile-sync-period="1m0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611026   79135 flags.go:33] FLAG: --authentication-kubeconfig=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611031   79135 flags.go:33] FLAG: --authentication-skip-lookup="false"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611034   79135 flags.go:33] FLAG: --authentication-token-webhook-cache-ttl="10s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611038   79135 flags.go:33] FLAG: --authentication-tolerate-lookup-failure="false"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611041   79135 flags.go:33] FLAG: --authorization-always-allow-paths="[/healthz]"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611050   79135 flags.go:33] FLAG: --authorization-kubeconfig=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611053   79135 flags.go:33] FLAG: --authorization-webhook-cache-authorized-ttl="10s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611056   79135 flags.go:33] FLAG: --authorization-webhook-cache-unauthorized-ttl="10s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611059   79135 flags.go:33] FLAG: --bind-address="127.0.0.1"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611063   79135 flags.go:33] FLAG: --cert-dir=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611066   79135 flags.go:33] FLAG: --cidr-allocator-type="RangeAllocator"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611070   79135 flags.go:33] FLAG: --client-ca-file=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611073   79135 flags.go:33] FLAG: --cloud-config=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611076   79135 flags.go:33] FLAG: --cloud-provider=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611078   79135 flags.go:33] FLAG: --cloud-provider-gce-lb-src-cidrs="130.211.0.0/22,209.85.152.0/22,209.85.204.0/22,35.191.0.0/16"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611084   79135 flags.go:33] FLAG: --cluster-cidr="172.22.0.0/16"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611087   79135 flags.go:33] FLAG: --cluster-name="kubernetes"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611090   79135 flags.go:33] FLAG: --cluster-signing-cert-file="/etc/kubernetes/pki/ca.pem"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611093   79135 flags.go:33] FLAG: --cluster-signing-key-file="/etc/kubernetes/pki/ca-key.pem"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611096   79135 flags.go:33] FLAG: --concurrent-deployment-syncs="5"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611101   79135 flags.go:33] FLAG: --concurrent-endpoint-syncs="5"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611104   79135 flags.go:33] FLAG: --concurrent-gc-syncs="20"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611107   79135 flags.go:33] FLAG: --concurrent-namespace-syncs="10"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611110   79135 flags.go:33] FLAG: --concurrent-replicaset-syncs="5"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611113   79135 flags.go:33] FLAG: --concurrent-resource-quota-syncs="5"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611116   79135 flags.go:33] FLAG: --concurrent-service-syncs="1"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611119   79135 flags.go:33] FLAG: --concurrent-serviceaccount-token-syncs="5"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611122   79135 flags.go:33] FLAG: --concurrent-ttl-after-finished-syncs="5"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611125   79135 flags.go:33] FLAG: --concurrent_rc_syncs="5"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611128   79135 flags.go:33] FLAG: --configure-cloud-routes="true"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611130   79135 flags.go:33] FLAG: --contention-profiling="false"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611133   79135 flags.go:33] FLAG: --controller-start-interval="0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611136   79135 flags.go:33] FLAG: --controllers="[*,bootstrapsigner,tokencleaner]"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611146   79135 flags.go:33] FLAG: --deleting-pods-burst="0"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611149   79135 flags.go:33] FLAG: --deleting-pods-qps="0.1"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611153   79135 flags.go:33] FLAG: --deployment-controller-sync-period="30s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611156   79135 flags.go:33] FLAG: --disable-attach-detach-reconcile-sync="false"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611159   79135 flags.go:33] FLAG: --enable-dynamic-provisioning="true"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611162   79135 flags.go:33] FLAG: --enable-garbage-collector="true"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611165   79135 flags.go:33] FLAG: --enable-hostpath-provisioner="false"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611171   79135 flags.go:33] FLAG: --enable-taint-manager="true"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611175   79135 flags.go:33] FLAG: --experimental-cluster-signing-duration="8760h0m0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611178   79135 flags.go:33] FLAG: --external-cloud-volume-plugin=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611185   79135 flags.go:33] FLAG: --feature-gates="RotateKubeletServerCertificate=true"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611193   79135 flags.go:33] FLAG: --flex-volume-plugin-dir="/usr/libexec/kubernetes/kubelet-plugins/volume/exec/"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611197   79135 flags.go:33] FLAG: --help="false"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611200   79135 flags.go:33] FLAG: --horizontal-pod-autoscaler-cpu-initialization-period="5m0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611203   79135 flags.go:33] FLAG: --horizontal-pod-autoscaler-downscale-delay="5m0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611219   79135 flags.go:33] FLAG: --horizontal-pod-autoscaler-downscale-stabilization="5m0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611223   79135 flags.go:33] FLAG: --horizontal-pod-autoscaler-initial-readiness-delay="30s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611226   79135 flags.go:33] FLAG: --horizontal-pod-autoscaler-sync-period="10s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611229   79135 flags.go:33] FLAG: --horizontal-pod-autoscaler-tolerance="0.1"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611234   79135 flags.go:33] FLAG: --horizontal-pod-autoscaler-upscale-delay="3m0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611237   79135 flags.go:33] FLAG: --horizontal-pod-autoscaler-use-rest-clients="true"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611240   79135 flags.go:33] FLAG: --http2-max-streams-per-connection="0"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611243   79135 flags.go:33] FLAG: --kube-api-burst="30"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611246   79135 flags.go:33] FLAG: --kube-api-content-type="application/vnd.kubernetes.protobuf"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611250   79135 flags.go:33] FLAG: --kube-api-qps="20"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611253   79135 flags.go:33] FLAG: --kubeconfig="/etc/kubernetes/controller-manager.kubeconfig"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611257   79135 flags.go:33] FLAG: --large-cluster-size-threshold="50"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611260   79135 flags.go:33] FLAG: --leader-elect="true"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611263   79135 flags.go:33] FLAG: --leader-elect-lease-duration="15s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611266   79135 flags.go:33] FLAG: --leader-elect-renew-deadline="10s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611272   79135 flags.go:33] FLAG: --leader-elect-resource-lock="endpoints"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611276   79135 flags.go:33] FLAG: --leader-elect-retry-period="2s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611279   79135 flags.go:33] FLAG: --log-backtrace-at=":0"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611284   79135 flags.go:33] FLAG: --log-dir="/var/log/kubernetes"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611287   79135 flags.go:33] FLAG: --log-file=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611290   79135 flags.go:33] FLAG: --log-flush-frequency="5s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611294   79135 flags.go:33] FLAG: --logtostderr="false"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611297   79135 flags.go:33] FLAG: --master=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611300   79135 flags.go:33] FLAG: --min-resync-period="12h0m0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611303   79135 flags.go:33] FLAG: --namespace-sync-period="5m0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611307   79135 flags.go:33] FLAG: --node-cidr-mask-size="24"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611310   79135 flags.go:33] FLAG: --node-eviction-rate="0.1"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611313   79135 flags.go:33] FLAG: --node-monitor-grace-period="40s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611316   79135 flags.go:33] FLAG: --node-monitor-period="5s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611319   79135 flags.go:33] FLAG: --node-startup-grace-period="1m0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611323   79135 flags.go:33] FLAG: --node-sync-period="0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611326   79135 flags.go:33] FLAG: --pod-eviction-timeout="5m0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611329   79135 flags.go:33] FLAG: --port="0"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611333   79135 flags.go:33] FLAG: --profiling="false"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611336   79135 flags.go:33] FLAG: --pv-recycler-increment-timeout-nfs="30"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611339   79135 flags.go:33] FLAG: --pv-recycler-minimum-timeout-hostpath="60"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611342   79135 flags.go:33] FLAG: --pv-recycler-minimum-timeout-nfs="300"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611345   79135 flags.go:33] FLAG: --pv-recycler-pod-template-filepath-hostpath=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611351   79135 flags.go:33] FLAG: --pv-recycler-pod-template-filepath-nfs=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611356   79135 flags.go:33] FLAG: --pv-recycler-timeout-increment-hostpath="30"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611359   79135 flags.go:33] FLAG: --pvclaimbinder-sync-period="15s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611362   79135 flags.go:33] FLAG: --register-retry-count="10"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611365   79135 flags.go:33] FLAG: --requestheader-allowed-names="[]"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611376   79135 flags.go:33] FLAG: --requestheader-client-ca-file=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611380   79135 flags.go:33] FLAG: --requestheader-extra-headers-prefix="[x-remote-extra-]"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611391   79135 flags.go:33] FLAG: --requestheader-group-headers="[x-remote-group]"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611399   79135 flags.go:33] FLAG: --requestheader-username-headers="[x-remote-user]"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611407   79135 flags.go:33] FLAG: --resource-quota-sync-period="5m0s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611410   79135 flags.go:33] FLAG: --root-ca-file="/etc/kubernetes/pki/ca.pem"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611413   79135 flags.go:33] FLAG: --route-reconciliation-period="10s"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611416   79135 flags.go:33] FLAG: --secondary-node-eviction-rate="0.01"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611419   79135 flags.go:33] FLAG: --secure-port="10252"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611422   79135 flags.go:33] FLAG: --service-account-private-key-file="/etc/kubernetes/pki/ca-key.pem"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611426   79135 flags.go:33] FLAG: --service-cluster-ip-range="10.254.0.0/16"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611429   79135 flags.go:33] FLAG: --skip-headers="false"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611432   79135 flags.go:33] FLAG: --stderrthreshold="2"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611436   79135 flags.go:33] FLAG: --terminated-pod-gc-threshold="12500"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611439   79135 flags.go:33] FLAG: --tls-cert-file="/etc/kubernetes/pki/controller-manager.pem"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611442   79135 flags.go:33] FLAG: --tls-cipher-suites="[]"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611450   79135 flags.go:33] FLAG: --tls-min-version=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611453   79135 flags.go:33] FLAG: --tls-private-key-file="/etc/kubernetes/pki/controller-manager-key.pem"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611473   79135 flags.go:33] FLAG: --tls-sni-cert-key="[]"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611508   79135 flags.go:33] FLAG: --unhealthy-zone-threshold="0.55"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611512   79135 flags.go:33] FLAG: --use-service-account-credentials="true"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611515   79135 flags.go:33] FLAG: --v="2"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611557   79135 flags.go:33] FLAG: --version="false"
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.611566   79135 flags.go:33] FLAG: --vmodule=""
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: W0523 19:43:48.952944   79135 authentication.go:249] No authentication-kubeconfig provided in order to lookup client-ca-file in configmap/extension-apiserver-authentication in kube-system, so client certificate authentication won't work.
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: W0523 19:43:48.953102   79135 authentication.go:252] No authentication-kubeconfig provided in order to lookup requestheader-client-ca-file in configmap/extension-apiserver-authentication in kube-system, so request-header client certificate authentication won't work.
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: W0523 19:43:48.953118   79135 authorization.go:146] No authorization-kubeconfig provided, so SubjectAccessReview of authorization tokens won't work.
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.953174   79135 controllermanager.go:155] Version: v1.14.0
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.953740   79135 secure_serving.go:116] Serving securely on 127.0.0.1:10252
+May 23 19:43:48 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:43:48.953976   79135 leaderelection.go:217] attempting to acquire leader lease  kube-system/kube-controller-manager...
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.176516   79135 leaderelection.go:227] successfully acquired lease kube-system/kube-controller-manager
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.178078   79135 event.go:209] Event(v1.ObjectReference{Kind:"Endpoints", Namespace:"kube-system", Name:"kube-controller-manager", UID:"eef140b3-7c83-11e9-bbc0-000c29144da3", APIVersion:"v1", ResourceVersion:"15559", FieldPath:""}): type: 'Normal' reason: 'LeaderElection' m7-a2-15-41.18-jiagou.cn_07948130-7d50-11e9-819a-000c29144da3 became leader
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.389156   79135 plugins.go:103] No cloud provider specified.
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.392433   79135 controllermanager.go:482] Starting "statefulset"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.392918   79135 controller_utils.go:1027] Waiting for caches to sync for tokens controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.406998   79135 controllermanager.go:497] Started "statefulset"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.407056   79135 controllermanager.go:482] Starting "cronjob"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.407218   79135 stateful_set.go:151] Starting stateful set controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.407240   79135 controller_utils.go:1027] Waiting for caches to sync for stateful set controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.417903   79135 controllermanager.go:497] Started "cronjob"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.417950   79135 controllermanager.go:482] Starting "csrapproving"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.418083   79135 cronjob_controller.go:94] Starting CronJob Manager
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.464200   79135 controllermanager.go:497] Started "csrapproving"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.464234   79135 controllermanager.go:482] Starting "tokencleaner"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.464494   79135 certificate_controller.go:113] Starting certificate controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.464524   79135 controller_utils.go:1027] Waiting for caches to sync for certificate controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.475268   79135 controllermanager.go:497] Started "tokencleaner"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.475299   79135 controllermanager.go:482] Starting "nodelifecycle"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.475364   79135 tokencleaner.go:116] Starting token cleaner controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.475376   79135 controller_utils.go:1027] Waiting for caches to sync for token_cleaner controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.486406   79135 node_lifecycle_controller.go:292] Sending events to api server.
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.486630   79135 node_lifecycle_controller.go:325] Controller is using taint based evictions.
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.486787   79135 taint_manager.go:175] Sending events to api server.
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.487090   79135 node_lifecycle_controller.go:390] Controller will reconcile labels.
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.487114   79135 node_lifecycle_controller.go:403] Controller will taint node by condition.
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.487139   79135 controllermanager.go:497] Started "nodelifecycle"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.487149   79135 controllermanager.go:482] Starting "pvc-protection"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.487270   79135 node_lifecycle_controller.go:427] Starting node controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.487354   79135 controller_utils.go:1027] Waiting for caches to sync for taint controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.493393   79135 controller_utils.go:1034] Caches are synced for tokens controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.498111   79135 controllermanager.go:497] Started "pvc-protection"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.498140   79135 controllermanager.go:482] Starting "ttl-after-finished"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: W0523 19:44:07.498190   79135 controllermanager.go:489] Skipping "ttl-after-finished"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.498198   79135 controllermanager.go:482] Starting "serviceaccount"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.498277   79135 pvc_protection_controller.go:99] Starting PVC protection controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.498289   79135 controller_utils.go:1027] Waiting for caches to sync for PVC protection controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.506593   79135 controllermanager.go:497] Started "serviceaccount"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.506673   79135 controllermanager.go:482] Starting "deployment"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.506871   79135 serviceaccounts_controller.go:115] Starting service account controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.506893   79135 controller_utils.go:1027] Waiting for caches to sync for service account controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.515590   79135 controllermanager.go:497] Started "deployment"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.515644   79135 controllermanager.go:482] Starting "horizontalpodautoscaling"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.515851   79135 deployment_controller.go:152] Starting deployment controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.515877   79135 controller_utils.go:1027] Waiting for caches to sync for deployment controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.576114   79135 controller_utils.go:1034] Caches are synced for token_cleaner controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.695040   79135 controllermanager.go:497] Started "horizontalpodautoscaling"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.695068   79135 controllermanager.go:482] Starting "service"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.695132   79135 horizontal.go:156] Starting HPA controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.695161   79135 controller_utils.go:1027] Waiting for caches to sync for HPA controller
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: E0523 19:44:07.847794   79135 core.go:77] Failed to start service controller: WARNING: no cloud provider provided, services of type LoadBalancer will fail
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: W0523 19:44:07.848236   79135 controllermanager.go:489] Skipping "service"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.848258   79135 controllermanager.go:482] Starting "attachdetach"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996008   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/aws-ebs"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996052   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/gce-pd"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996066   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/cinder"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996084   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/portworx-volume"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996106   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/vsphere-volume"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996117   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/azure-disk"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996125   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/photon-pd"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996133   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/scaleio"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996154   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/storageos"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996176   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/fc"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996184   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/iscsi"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996191   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/rbd"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996226   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/csi"
+May 23 19:44:07 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996382   79135 controllermanager.go:497] Started "attachdetach"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996392   79135 controllermanager.go:482] Starting "pv-protection"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996446   79135 attach_detach_controller.go:323] Starting attach detach controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:07.996454   79135 controller_utils.go:1027] Waiting for caches to sync for attach detach controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.144931   79135 controllermanager.go:497] Started "pv-protection"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.144961   79135 controllermanager.go:482] Starting "endpoint"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.145009   79135 pv_protection_controller.go:81] Starting PV protection controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.145023   79135 controller_utils.go:1027] Waiting for caches to sync for PV protection controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.295797   79135 controllermanager.go:497] Started "endpoint"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.295853   79135 controllermanager.go:482] Starting "resourcequota"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.295916   79135 endpoints_controller.go:166] Starting endpoint controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.295934   79135 controller_utils.go:1027] Waiting for caches to sync for endpoint controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652370   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for endpoints
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652602   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for controllerrevisions.apps
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652626   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for leases.coordination.k8s.io
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652652   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for horizontalpodautoscalers.autoscaling
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652675   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for jobs.batch
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652709   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for poddisruptionbudgets.policy
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652732   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for podtemplates
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652756   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for statefulsets.apps
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652779   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for events.events.k8s.io
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652800   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for networkpolicies.networking.k8s.io
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652899   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for cronjobs.batch
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652941   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for deployments.extensions
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652957   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for replicasets.apps
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.652975   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for ingresses.networking.k8s.io
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653071   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for serviceaccounts
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653160   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for daemonsets.apps
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653190   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for rolebindings.rbac.authorization.k8s.io
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653208   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for roles.rbac.authorization.k8s.io
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653293   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for limitranges
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653436   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for replicasets.extensions
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653463   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for ingresses.extensions
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653483   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for daemonsets.extensions
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653499   79135 resource_quota_monitor.go:228] QuotaMonitor created object count evaluator for deployments.apps
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: E0523 19:44:08.653528   79135 resource_quota_controller.go:171] initial monitor sync has error: couldn't start monitor for resource "extensions/v1beta1, Resource=networkpolicies": unable to monitor quota for resource "extensions/v1beta1, Resource=networkpolicies"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653546   79135 controllermanager.go:497] Started "resourcequota"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653556   79135 controllermanager.go:482] Starting "disruption"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653757   79135 resource_quota_controller.go:276] Starting resource quota controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653776   79135 controller_utils.go:1027] Waiting for caches to sync for resource quota controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.653793   79135 resource_quota_monitor.go:301] QuotaMonitor running
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.676987   79135 controllermanager.go:497] Started "disruption"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.677015   79135 controllermanager.go:482] Starting "csrsigning"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.677049   79135 disruption.go:286] Starting disruption controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.677075   79135 controller_utils.go:1027] Waiting for caches to sync for disruption controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: E0523 19:44:08.745284   79135 prometheus.go:138] failed to register depth metric certificate: duplicate metrics collector registration attempted
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: E0523 19:44:08.745352   79135 prometheus.go:150] failed to register adds metric certificate: duplicate metrics collector registration attempted
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: E0523 19:44:08.745404   79135 prometheus.go:162] failed to register latency metric certificate: duplicate metrics collector registration attempted
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: E0523 19:44:08.745435   79135 prometheus.go:174] failed to register work_duration metric certificate: duplicate metrics collector registration attempted
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: E0523 19:44:08.745448   79135 prometheus.go:189] failed to register unfinished_work_seconds metric certificate: duplicate metrics collector registration attempted
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: E0523 19:44:08.745458   79135 prometheus.go:202] failed to register longest_running_processor_microseconds metric certificate: duplicate metrics collector registration attempted
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: E0523 19:44:08.745480   79135 prometheus.go:214] failed to register retries metric certificate: duplicate metrics collector registration attempted
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.745497   79135 controllermanager.go:497] Started "csrsigning"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.745506   79135 controllermanager.go:482] Starting "ttl"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.745530   79135 certificate_controller.go:113] Starting certificate controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.745541   79135 controller_utils.go:1027] Waiting for caches to sync for certificate controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.896953   79135 controllermanager.go:497] Started "ttl"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.897014   79135 controllermanager.go:482] Starting "podgc"
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.897058   79135 ttl_controller.go:116] Starting TTL controller
+May 23 19:44:08 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:08.897094   79135 controller_utils.go:1027] Waiting for caches to sync for TTL controller
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.053140   79135 controllermanager.go:497] Started "podgc"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.053184   79135 controllermanager.go:482] Starting "daemonset"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.053155   79135 gc_controller.go:76] Starting GC controller
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.053229   79135 controller_utils.go:1027] Waiting for caches to sync for GC controller
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.197389   79135 controllermanager.go:497] Started "daemonset"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.197430   79135 controllermanager.go:482] Starting "persistentvolume-binder"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.197456   79135 daemon_controller.go:267] Starting daemon sets controller
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.197469   79135 controller_utils.go:1027] Waiting for caches to sync for daemon sets controller
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.345863   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/host-path"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.345906   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/nfs"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.345916   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/glusterfs"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.345923   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/rbd"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.345932   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/quobyte"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.345942   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/azure-file"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346011   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/flocker"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346031   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/portworx-volume"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346041   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/scaleio"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346051   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/local-volume"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346058   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/storageos"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346065   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/aws-ebs"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346072   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/gce-pd"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346080   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/cinder"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346087   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/vsphere-volume"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346094   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/azure-disk"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346102   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/photon-pd"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346141   79135 controllermanager.go:497] Started "persistentvolume-binder"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346149   79135 controllermanager.go:482] Starting "persistentvolume-expander"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346177   79135 pv_controller_base.go:270] Starting persistent volume controller
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.346191   79135 controller_utils.go:1027] Waiting for caches to sync for persistent volume controller
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.495854   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/aws-ebs"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.495904   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/gce-pd"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.495918   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/cinder"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.495936   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/portworx-volume"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.495945   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/vsphere-volume"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.495952   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/glusterfs"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.495958   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/rbd"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.495965   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/azure-disk"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.495975   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/azure-file"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.495982   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/photon-pd"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.495989   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/scaleio"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.495996   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/storageos"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.496003   79135 plugins.go:601] Loaded volume plugin "kubernetes.io/fc"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.496366   79135 controllermanager.go:497] Started "persistentvolume-expander"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.496378   79135 controllermanager.go:482] Starting "garbagecollector"
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.496402   79135 expand_controller.go:153] Starting expand controller
+May 23 19:44:09 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:09.496416   79135 controller_utils.go:1027] Waiting for caches to sync for expand controller
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.204373   79135 controllermanager.go:497] Started "garbagecollector"
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.204403   79135 controllermanager.go:482] Starting "replicaset"
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.204778   79135 garbagecollector.go:130] Starting garbage collector controller
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.204792   79135 controller_utils.go:1027] Waiting for caches to sync for garbage collector controller
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.204842   79135 graph_builder.go:308] GraphBuilder running
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.214526   79135 controllermanager.go:497] Started "replicaset"
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.214556   79135 controllermanager.go:482] Starting "csrcleaner"
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.214739   79135 replica_set.go:182] Starting replicaset controller
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.214755   79135 controller_utils.go:1027] Waiting for caches to sync for ReplicaSet controller
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.222457   79135 controllermanager.go:497] Started "csrcleaner"
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.222521   79135 controllermanager.go:482] Starting "root-ca-cert-publisher"
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: W0523 19:44:10.222546   79135 controllermanager.go:489] Skipping "root-ca-cert-publisher"
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.222563   79135 controllermanager.go:482] Starting "namespace"
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.222618   79135 cleaner.go:81] Starting CSR cleaner controller
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.252543   79135 controllermanager.go:497] Started "namespace"
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.252561   79135 controllermanager.go:482] Starting "cloud-node-lifecycle"
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.252583   79135 namespace_controller.go:186] Starting namespace controller
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.252594   79135 controller_utils.go:1027] Waiting for caches to sync for namespace controller
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.350123   79135 resource_quota_controller.go:427] syncing resource quota controller with updated resources from discovery: map[/v1, Resource=configmaps:{} /v1, Resource=endpoints:{} /v1, Resource=events:{} /v1, Resource=limitranges:{} /v1, Resource=persistentvolumeclaims:{} /v1, Resource=pods:{} /v1, Resource=podtemplates:{} /v1, Resource=replicationcontrollers:{} /v1, Resource=resourcequotas:{} /v1, Resource=secrets:{} /v1, Resource=serviceaccounts:{} /v1, Resource=services:{} apps/v1, Resource=controllerrevisions:{} apps/v1, Resource=daemonsets:{} apps/v1, Resource=deployments:{} apps/v1, Resource=replicasets:{} apps/v1, Resource=statefulsets:{} autoscaling/v1, Resource=horizontalpodautoscalers:{} batch/v1, Resource=jobs:{} batch/v1beta1, Resource=cronjobs:{} coordination.k8s.io/v1, Resource=leases:{} events.k8s.io/v1beta1, Resource=events:{} extensions/v1beta1, Resource=daemonsets:{} extensions/v1beta1, Resource=deployments:{} extensions/v1beta1, Resource=ingresses:{} extensions/v1beta1, Resource=networkpolicies:{} extensions/v1beta1, Resource=replicasets:{} networking.k8s.io/v1, Resource=networkpolicies:{} networking.k8s.io/v1beta1, Resource=ingresses:{} policy/v1beta1, Resource=poddisruptionbudgets:{} rbac.authorization.k8s.io/v1, Resource=rolebindings:{} rbac.authorization.k8s.io/v1, Resource=roles:{}]
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.395436   79135 node_lifecycle_controller.go:77] Sending events to api server
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: E0523 19:44:10.395605   79135 core.go:161] failed to start cloud node lifecycle controller: no cloud provider provided
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: W0523 19:44:10.395617   79135 controllermanager.go:489] Skipping "cloud-node-lifecycle"
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.395625   79135 controllermanager.go:482] Starting "nodeipam"
+May 23 19:44:10 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:10.544940   79135 node_ipam_controller.go:99] Sending events to api server.
+May 23 19:44:11 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:11.697607   79135 garbagecollector.go:201] syncing garbage collector with updated resources from discovery (attempt 1): added: [/v1, Resource=configmaps /v1, Resource=endpoints /v1, Resource=events /v1, Resource=limitranges /v1, Resource=namespaces /v1, Resource=nodes /v1, Resource=persistentvolumeclaims /v1, Resource=persistentvolumes /v1, Resource=pods /v1, Resource=podtemplates /v1, Resource=replicationcontrollers /v1, Resource=resourcequotas /v1, Resource=secrets /v1, Resource=serviceaccounts /v1, Resource=services admissionregistration.k8s.io/v1beta1, Resource=mutatingwebhookconfigurations admissionregistration.k8s.io/v1beta1, Resource=validatingwebhookconfigurations apiextensions.k8s.io/v1beta1, Resource=customresourcedefinitions apiregistration.k8s.io/v1, Resource=apiservices apps/v1, Resource=controllerrevisions apps/v1, Resource=daemonsets apps/v1, Resource=deployments apps/v1, Resource=replicasets apps/v1, Resource=statefulsets autoscaling/v1, Resource=horizontalpodautoscalers batch/v1, Resource=jobs batch/v1beta1, Resource=cronjobs certificates.k8s.io/v1beta1, Resource=certificatesigningrequests coordination.k8s.io/v1, Resource=leases events.k8s.io/v1beta1, Resource=events extensions/v1beta1, Resource=daemonsets extensions/v1beta1, Resource=deployments extensions/v1beta1, Resource=ingresses extensions/v1beta1, Resource=networkpolicies extensions/v1beta1, Resource=podsecuritypolicies extensions/v1beta1, Resource=replicasets networking.k8s.io/v1, Resource=networkpolicies networking.k8s.io/v1beta1, Resource=ingresses node.k8s.io/v1beta1, Resource=runtimeclasses policy/v1beta1, Resource=poddisruptionbudgets policy/v1beta1, Resource=podsecuritypolicies rbac.authorization.k8s.io/v1, Resource=clusterrolebindings rbac.authorization.k8s.io/v1, Resource=clusterroles rbac.authorization.k8s.io/v1, Resource=rolebindings rbac.authorization.k8s.io/v1, Resource=roles scheduling.k8s.io/v1, Resource=priorityclasses storage.k8s.io/v1, Resource=storageclasses storage.k8s.io/v1, Resource=volumeattachments storage.k8s.io/v1beta1, Resource=csidrivers storage.k8s.io/v1beta1, Resource=csinodes], removed: []
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.554351   79135 range_allocator.go:78] Sending events to api server.
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.554619   79135 controllermanager.go:497] Started "nodeipam"
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.554644   79135 controllermanager.go:482] Starting "replicationcontroller"
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.554810   79135 node_ipam_controller.go:167] Starting ipam controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.554837   79135 controller_utils.go:1027] Waiting for caches to sync for node controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.573378   79135 controllermanager.go:497] Started "replicationcontroller"
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.573417   79135 controllermanager.go:482] Starting "job"
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.573562   79135 replica_set.go:182] Starting replicationcontroller controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.573591   79135 controller_utils.go:1027] Waiting for caches to sync for ReplicationController controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.588593   79135 controllermanager.go:497] Started "job"
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.588657   79135 controllermanager.go:482] Starting "bootstrapsigner"
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.588630   79135 job_controller.go:143] Starting job controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.588795   79135 controller_utils.go:1027] Waiting for caches to sync for job controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.601146   79135 controllermanager.go:497] Started "bootstrapsigner"
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.601188   79135 controllermanager.go:482] Starting "route"
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: W0523 19:44:20.601202   79135 core.go:175] configure-cloud-routes is set, but no cloud provider specified. Will not configure cloud provider routes.
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: W0523 19:44:20.601209   79135 controllermanager.go:489] Skipping "route"
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.601215   79135 controllermanager.go:482] Starting "clusterrole-aggregation"
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.601401   79135 controller_utils.go:1027] Waiting for caches to sync for bootstrap_signer controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.611299   79135 controllermanager.go:497] Started "clusterrole-aggregation"
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: E0523 19:44:20.611640   79135 resource_quota_controller.go:437] failed to sync resource monitors: couldn't start monitor for resource "extensions/v1beta1, Resource=networkpolicies": unable to monitor quota for resource "extensions/v1beta1, Resource=networkpolicies"
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.612140   79135 clusterroleaggregation_controller.go:148] Starting ClusterRoleAggregator
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.612152   79135 controller_utils.go:1027] Waiting for caches to sync for ClusterRoleAggregator controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.615568   79135 controller_utils.go:1027] Waiting for caches to sync for garbage collector controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.654272   79135 controller_utils.go:1034] Caches are synced for GC controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.655345   79135 controller_utils.go:1034] Caches are synced for node controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.655360   79135 range_allocator.go:157] Starting range CIDR allocator
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.655371   79135 controller_utils.go:1027] Waiting for caches to sync for cidrallocator controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.674221   79135 controller_utils.go:1034] Caches are synced for ReplicationController controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.689320   79135 controller_utils.go:1034] Caches are synced for job controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.695466   79135 controller_utils.go:1034] Caches are synced for HPA controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.696179   79135 controller_utils.go:1034] Caches are synced for endpoint controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.697187   79135 controller_utils.go:1034] Caches are synced for TTL controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.699238   79135 controller_utils.go:1034] Caches are synced for PVC protection controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.702159   79135 controller_utils.go:1034] Caches are synced for bootstrap_signer controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.715139   79135 controller_utils.go:1034] Caches are synced for ReplicaSet controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.716168   79135 controller_utils.go:1034] Caches are synced for deployment controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.756255   79135 controller_utils.go:1034] Caches are synced for cidrallocator controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.778231   79135 controller_utils.go:1034] Caches are synced for disruption controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.778302   79135 disruption.go:294] Sending events to api server.
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.807458   79135 controller_utils.go:1034] Caches are synced for stateful set controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.845377   79135 controller_utils.go:1034] Caches are synced for PV protection controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.846517   79135 controller_utils.go:1034] Caches are synced for persistent volume controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.897378   79135 controller_utils.go:1034] Caches are synced for attach detach controller
+May 23 19:44:20 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:20.897707   79135 controller_utils.go:1034] Caches are synced for expand controller
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.012428   79135 controller_utils.go:1034] Caches are synced for ClusterRoleAggregator controller
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.053217   79135 controller_utils.go:1034] Caches are synced for namespace controller
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.107187   79135 controller_utils.go:1034] Caches are synced for service account controller
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.354373   79135 controller_utils.go:1034] Caches are synced for resource quota controller
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.365081   79135 controller_utils.go:1034] Caches are synced for certificate controller
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.388267   79135 controller_utils.go:1034] Caches are synced for taint controller
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.388361   79135 taint_manager.go:198] Starting NoExecuteTaintManager
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.398229   79135 controller_utils.go:1034] Caches are synced for daemon sets controller
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.405176   79135 controller_utils.go:1034] Caches are synced for garbage collector controller
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.405199   79135 garbagecollector.go:139] Garbage collector: all resource monitors have synced. Proceeding to collect garbage
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.416195   79135 controller_utils.go:1034] Caches are synced for garbage collector controller
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.416227   79135 garbagecollector.go:242] synced garbage collector
+May 23 19:44:21 m7-a2-15-41.18-jiagou.cn kube-controller-manager[79135]: I0523 19:44:21.446429   79135 controller_utils.go:1034] Caches are synced for certificate controller
